@@ -3,55 +3,31 @@
 int main(int arg, char *argv[])
 {
     int qian = 0;
-    printf("进入存钱取钱管理系统\n");
+    printf("jinrucunqianquqianguanlixitong\n");
     while (1)
     {
-        int a = 0;
 
-        printf("1---存钱\n");
-        printf("2---取钱\n");
-        printf("3---余额\n");
-        printf("4---退出\n");
+        printf("1---cunqian\n");
+        printf("2---quqian\n");
+        printf("3---yue\n");
+        printf("4---tuichu\n");
 
-        printf("请输入功能编号\n");
-        scanf("%d", &a);
+        printf("qingxuanzexiangyingdegongneng\n");
+        int code;
+        scanf("%d", &code);
 
-        if (a == 1)
+        if (code == 1)
         {
-
+            printf("qingshuruyaocunrudejine:\n");
             int cun;
-            char x;
-            printf("进入存钱功能，请输入要存入的金额\n");
-
             scanf("%d", &cun);
-
             qian += cun;
 
-            printf("存入成功，点击回车继续");
+            printf("cunruchenggong,dianjihuichejixu\n");
+            char x;
             scanf("%c", &x);
             scanf("%c", &x);
-        }
-        if (a == 2)
-        {
-            if (qian>=qu)
-            {
-                scanf("%d", &qu);
-                int qu;
-                char x;
-                printf("进入取钱功能，请输入要取出的金额\n");
-                if (qian >= qu)
-                {
-                    scanf("%d", &qu);
-                    qian -= qu;
-                    printf("取钱成功，点击回车继续\n");
-
-                    scanf("%c", &x)
-                        scanf("%c", &x)
-                }
-            }
         }
     }
-    printf("hello world!");
-
     return 0;
 }
