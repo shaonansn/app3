@@ -32,13 +32,22 @@ int main(int arg, char *argv[])
         {
             printf("qingshuruyaoquchudejine:\n");
             int qu;
-            scanf("%d", &qu);
-            qian -= qu;
-
-            printf("quchuchenggong,dianjihuichejixu\n");
-            char x;
-            scanf("%c", &x);
-            scanf("%c", &x);
+            
+            scanf("%d",&qu);
+            if(qian<qu){
+                printf("yuebuzu,quqianshibai\n");
+                char x;
+                scanf("%c",&x);
+                scanf("%c",&x);
+            }else
+            {
+                qian-=qu;
+                printf("quqianchenggong,dianjihuichejixu\n");
+                char x;
+                scanf("%c",&x);
+                scanf("%c",&x);
+            }
+            
         }
 
         if (code == 3)
@@ -50,6 +59,12 @@ int main(int arg, char *argv[])
             char x;
             scanf("%c", &x);
             scanf("%c", &x);
+        }
+
+        if (code == 4)
+        {
+          printf  ("chengxutuichu\n");
+          break; 
         }
        
     }
