@@ -41,7 +41,17 @@ int main(int arg, char *argv[])
             scanf("%c", &x);
         }
 
-        
+        if (code == 3)
+        {
+            printf("dangqianyuewei: \n");
+            printf("%d\n", qian);
+
+            printf("quchuchenggong,dianjihuichejixu\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
+        }
+       
     }
-    return 0;
+     return 0;
 }
