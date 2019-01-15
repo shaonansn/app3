@@ -28,6 +28,20 @@ int main(int arg, char *argv[])
             scanf("%c", &x);
             scanf("%c", &x);
         }
+        if (code == 2)
+        {
+            printf("qingshuruyaoquchudejine:\n");
+            int qu;
+            scanf("%d", &qu);
+            qian -= qu;
+
+            printf("quchuchenggong,dianjihuichejixu\n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
+        }
+
+        
     }
     return 0;
 }
