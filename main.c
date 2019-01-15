@@ -33,18 +33,20 @@ int main(int arg, char *argv[])
         }
         if (a == 2)
         {
-            if (qian >= qu)
+            if (qian>=qu)
             {
                 scanf("%d", &qu);
                 int qu;
                 char x;
                 printf("进入取钱功能，请输入要取出的金额\n");
-
+                if (qian >= qu)
                 {
-                    qian
+                    scanf("%d", &qu);
+                    qian -= qu;
+                    printf("取钱成功，点击回车继续\n");
 
+                    scanf("%c", &x)
                         scanf("%c", &x)
-                            scanf("%c", &x)
                 }
             }
         }
